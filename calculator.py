@@ -1,7 +1,9 @@
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+# Ask the user to enter two numbers and an operator
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
 operator = input("Enter an operator (+, -, *, /): ")
 
+# Perform the operation
 if operator == "+":
     result = num1 + num2
 elif operator == "-":
@@ -16,4 +18,5 @@ elif operator == "/":
 else:
     result = "Invalid operator!"
 
+# Display the result
 print(f"{num1} {operator} {num2} = {result}")
